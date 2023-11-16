@@ -2,6 +2,20 @@ from pydantic import BaseModel
 from typing import Dict, List
 
 class ModelFindImdb(BaseModel):
+    """
+    Pydantic model for querying IMDb data.
+    Attributes:
+        name (str): The name of the movie.
+        year (Dict[str, int]): The year of the movie (query conditions).
+        runtime (Dict[str, int]): The runtime of the movie (query conditions).
+        genre (str): The genre of the movie.
+        ratingValue (Dict[str, float]): The rating value of the movie (query conditions).
+        ratingCount (Dict[str, int]): The rating count of the movie (query conditions).
+        director (str): The director of the movie.
+        cast (str): The cast of the movie.
+    Config:
+        schema_extra (Dict): Extra schema information for documentation.
+    """
     name : str = None 
     year : Dict[str , int] = None
     runtime : Dict[str, int] = None 
@@ -25,6 +39,20 @@ class ModelFindImdb(BaseModel):
         }
 
 class ModelCreateImdb(BaseModel):
+    """
+    Pydantic model for creating IMDb data.
+    Attributes:
+        name (str): The name of the movie.
+        year (int): The year of the movie.
+        runtime (int): The runtime of the movie.
+        genre (List[str]): The genres of the movie.
+        ratingValue (float): The rating value of the movie.
+        ratingCount (int): The rating count of the movie.
+        director (List[dict]): The directors of the movie.
+        cast (List[dict]): The cast of the movie.
+    Config:
+        schema_extra (Dict): Extra schema information for documentation.
+    """
     name : str = None 
     year : int = None
     runtime : int = None 
@@ -48,5 +76,13 @@ class ModelCreateImdb(BaseModel):
         }
 
 class ModelUpdateImdb(BaseModel):
+    """
+    Pydantic model for updating IMDb data.
+    Attributes:
+        new_document (ModelFindImdb): The new data for the movie.
+        query (ModelFindImdb): The query conditions for updating.
+    Config:
+        schema_extra (Dict): Extra schema information for documentation.
+    """
     new_document : ModelFindImdb  
     query : ModelFindImdb
