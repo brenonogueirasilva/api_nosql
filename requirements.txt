@@ -1,0 +1,8 @@
+pylance
+ipykernel
+google-cloud-secret-manager
+fastapi==0.103.1
+pymongo==4.4.1
+uvicorn
+pydantic==1.10.9
+pandas==2.0.2
