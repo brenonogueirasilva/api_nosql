@@ -1,7 +1,7 @@
 # Projeto 5: Desenvolvimento de uma API junto a banco de dados NoSQL
 
 ## Introdução
-Este projeto tem como objetivo desenvolver uma API que interaja com um banco de dados NoSQL MongoDB, hospedado no ambiente de nuvem da Google (GCP). A API será capaz de realizar todas as operações do CRUD (Create, Read, Update, Delete), permitindo a criação, leitura, atualização e exclusão de registros ou documentos. A proposta visa simular uma etapa do ambiente de trabalho de um engenheiro de dados, que frequentemente precisa disponibilizar dados por meio de uma API em vez de permitir acesso direto ao banco. Isso se deve às inúmeras vantagens proporcionadas, como maior segurança, abstração mais eficiente dos dados, padronização e flexibilidade na manutenção.
+Este projeto tem como objetivo desenvolver uma API que interaja com um banco de dados NoSQL MongoDB, hospedado no ambiente de nuvem da Google (GCP). A API será capaz de realizar todas as operações do CRUD (Create, Read, Update, Delete), permitindo a criação, leitura, atualização e exclusão de registros ou documentos. A proposta visa simular uma etapa do ambiente de trabalho de um engenheiro de dados, que frequentemente precisa disponibilizar dados por meio de uma API para uma aplicação por exemplo, frente às inúmeras vantagens proporcionadas como maior segurança, abstração mais eficiente dos dados, padronização e flexibilidade na manutenção.
 
 ## Tecnologias Utilizadas
 - **MongoDb:** Banco de Dados NoSQL amplamente adotado no mercado, servindo como o principal ponto de interação para todas as operações do CRUD pela API.
